@@ -5,9 +5,9 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
     libc6-dev \
     make \
     && sudo rm -rf /var/lib/apt/lists/*
-ENV GOLANG_VERSION 1.8.3
+ENV GOLANG_VERSION 1.9.2
 ENV goRelArch linux-amd64
-ENV GOLANG_DOWNLOAD_SHA256 1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772
+ENV GOLANG_DOWNLOAD_SHA256 de874549d9a8d8d8062be05808509c09a88a248e77ec14eb77453530829ac02b
 ENV GOLANG_DOWNLOAD_URL https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
